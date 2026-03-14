@@ -1,12 +1,12 @@
 name: demo 
 on: 
-    workflow_dispatch:
-
+    push:
+        branches: [main]
 jobs:
     job_A:
         runs-on: ubuntu-latest 
         steps:
-            - run: echo 'hello world' 
+            - run: echo 'hello world again' 
     job_B:
         runs-on: ubuntu-latest 
         steps:
